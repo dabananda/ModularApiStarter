@@ -6,10 +6,7 @@ using ModularApiStarter.Shared.Common;
 using ModularApiStarter.Shared.Middlewares;
 using Serilog;
 
-// Bootstrap logger: catches any startup failures before the host/config is built.
-Log.Logger = new LoggerConfiguration()
-    .WriteTo.Console()
-    .CreateBootstrapLogger();
+Log.Logger = new LoggerConfiguration().WriteTo.Console().CreateBootstrapLogger();
 
 try
 {
