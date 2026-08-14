@@ -3,4 +3,7 @@
     <Project Path="ModularApiStarter.Api/ModularApiStarter.Api.csproj" />
     <Project Path="ModularApiStarter.Shared/ModularApiStarter.Shared.csproj" />
   </Folder>
+  <Folder Name="/src/Modules/">
+    <Project Path="ModularApiStarter.Modules.Greeting/ModularApiStarter.Modules.Greeting.csproj" />
+  </Folder>
 </Solution>

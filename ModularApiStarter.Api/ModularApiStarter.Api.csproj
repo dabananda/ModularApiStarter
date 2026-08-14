@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ModularApiStarter.Shared\ModularApiStarter.Shared.csproj" />
+    <ProjectReference Include="..\ModularApiStarter.Modules.Greeting\ModularApiStarter.Modules.Greeting.csproj" />
   </ItemGroup>
 
 </Project>

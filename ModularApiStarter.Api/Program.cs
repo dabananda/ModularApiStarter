@@ -1,4 +1,5 @@
 using Microsoft.OpenApi.Models;
+using ModularApiStarter.Modules.Greeting;
 using ModularApiStarter.Shared;
 using ModularApiStarter.Shared.Abstraction;
 using ModularApiStarter.Shared.Common;
@@ -58,8 +59,9 @@ try
     // per-module registrations go here, e.g.:
     // builder.Services.AddRequestHandlers(typeof(LinkModuleMarker).Assembly);
     // builder.Services.AddValidators(typeof(LinkModuleMarker).Assembly);
+    // (GreetingModule below handles its own registration inside RegisterModule)
 
-    var modules = new IModule[] { /* new ModuleName(), ... */ };
+    var modules = new IModule[] { new GreetingModule() /* , new YourModule(), ... */ };
 
     foreach (var module in modules)
         module.RegisterModule(builder.Services, builder.Configuration);
