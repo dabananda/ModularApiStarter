@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="ModularApiStarter.Api/ModularApiStarter.Api.csproj" />
+    <Project Path="ModularApiStarter.Shared/ModularApiStarter.Shared.csproj" />
+  </Folder>
+</Solution>
